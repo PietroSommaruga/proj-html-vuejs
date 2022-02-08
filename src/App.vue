@@ -1,21 +1,27 @@
 <template>
   <div id="app">
     <header-section/>
-    <main-Space/>
+    <main-first/>
+    <main-second/>
+    <main-third/>
     <footer-content/>
   </div>
 </template>
 
 <script>
 import headerSection from './components/headerSection.vue'
-import mainSpace from './components/mainSpace.vue'
+import mainFirst from './components/mainFirst.vue'
+import mainSecond from './components/mainSecond.vue'
+import mainThird from './components/mainThird.vue'
 import footerContent from './components/footerContent.vue'
 
 export default {
   name: 'App',
   components: {
     headerSection,
-    mainSpace,
+    mainFirst,
+    mainSecond,
+    mainThird,
     footerContent
   }
 }

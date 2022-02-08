@@ -1,0 +1,16 @@
+.main-first {
+    margin: 0 auto;
+    width: 1200px;
+    height: 800px;
+
+    .three-box-container {
+        padding: 0 150px;
+        width: 100%;
+        height: 350px;
+        background-color: #e4eae6;
+        .card {
+            width: 200px;
+        }
+    }
+
+}
