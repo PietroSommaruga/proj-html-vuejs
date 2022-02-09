@@ -1,6 +1,9 @@
 .header-info {
     height: 50px;
     line-height: 50px;
+    background: #24343c;
+    color: #fff;
+    font-size: 10px;
 }
 .header-info, header {
     margin: 0 auto;
@@ -15,20 +18,97 @@ header {
     background-size: 100%;
     background-repeat: no-repeat;
     color: #fff;
+    .title {
+        
+        .nex {
+            padding: 5px 0 5px 20px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            color: #038483;
+            background-color: #0384842d;
+            font-size: 18px;
+        }
+        .gen {
+            font-size: 18px;
+        }
+    }
 
     nav {
         font-size: 20px;
+        line-height: 100%;
         ul {
             display: flex;
             margin: 0;
             li {
                 list-style: none;
+                &:hover {
+                    color: #038483;
+                    cursor: pointer;
+                }
             }
         }
     }
-
     .header-content {
         width: 40%;
-        height: calc(100% - 62px);
+        height: calc(100% - 50px);
+        p {
+            font-weight: 800;
+            font-size: 35px;
+            margin: 0;
+        }
+        span {
+            width: 250px;
+            font-weight: 800;
+            font-size: 35px;
+            text-decoration: none;
+            position: relative;
+            .get-more {
+                padding-right: 4px;
+            }
+            .productivity{
+                z-index: 2;
+                &:before{
+                    content: '';
+                    width: 215px;
+                    position: absolute;
+                    
+                    bottom: 5px;
+                    left: 0;
+                    border-bottom: 18px solid #038483 ;
+                    z-index: -1;
+                }
+            }
+            
+            
+        }
+        .h-res {
+            color: #51bdbc;
+        }
+        .subtitle {
+            color: #babdbe;
+        }
     }
+
+    
+    
+    .get-in-touch, .read-more {
+        cursor: pointer;
+    }
+    .get-in-touch{
+        background-color: #038483;
+        color: #fff;
+        border: 5px;
+        &:hover{
+            color: black;
+        }
+    }
+    .read-more {
+        color: #51bdbc;
+        border: 1px solid #51bdbc;
+        &:hover {
+            color: black;
+        }
+    }
+
+    
 }

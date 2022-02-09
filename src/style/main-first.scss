@@ -1,16 +1,79 @@
 .main-first {
     margin: 0 auto;
     width: 1200px;
-    height: 800px;
+    height: 900px;
 
     .three-box-container {
         padding: 0 150px;
         width: 100%;
-        height: 350px;
+        height: 400px;
         background-color: #e4eae6;
         .card {
-            width: 200px;
+            width: 280px;
+            height: 250px;
         }
     }
+    .the-company {
+        width: 100%;
+        height: 500px;
+        .text, .img {
+            width: 50%;
+            height: 100%;
+        }
+        .text {
+            padding-left: 150px;
+            padding-right: 20px;
+            .about{
+                color: #51bdbc;
+            }
+            .title-section {
+                span{
+                    font-size: 35px;
+                }
+                .the {
+                    color: #038483;
+                    background-color: #0384842d;
+                }
+            }
+            .subtitle {
+                color: #babdbe;
+            }
 
+            .block {
+                width: 120px;
+                .block-counter{
+                    font-size: 28px;
+                    color: #51bdbc;
+                }
+                .block-text{
+                    color: #babdbe;
+                }
+            }
+
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .get-in-touch, .read-more {
+            cursor: pointer;
+        }
+        .get-in-touch{
+            background-color: #038483;
+            color: #fff;
+            border: 5px;
+            &:hover{
+                color: black;
+            }
+        }
+        .read-more {
+            color: #51bdbc;
+            border: 1px solid #51bdbc;
+            &:hover {
+                color: black;
+            }
+        }
+        
+        
+    }
 }
