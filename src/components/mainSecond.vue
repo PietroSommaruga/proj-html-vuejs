@@ -1,9 +1,13 @@
 <template>
 <div class="actions-container">
     <p>WE DO MORE FOR EVERYONE</p>
-    <h1>Actions & Projects</h1>
+    <div class="title-section">
+        <strong>Actions &</strong>
+        <strong class="projects px-3 mx-3">Projects </strong>
+    </div>
     <nav>
         <ul class="d-flex justify-content-center py-3">
+            <li class="px-3 py-2">ALL</li>
             <li class="px-3 py-2" v-for="project in projects" :key="project.id">{{project.type}}</li>
         </ul>
     </nav>
@@ -13,7 +17,6 @@
             <strong class="text px-4">{{project.text}}</strong>
         </div>
     </div>    
-    <!-- <div>{{project[currentIndex].type}}</div> -->
 </div>
 
 </template>
@@ -24,11 +27,6 @@ export default {
     data() {
         return {
             projects:[
-                // {
-                //     id: '1',
-                //     type: 'ALL',
-                // },
-
                 {
                     id: '2',
                     type: 'INSTITUTIONAL',
@@ -72,20 +70,9 @@ export default {
                 },
 
             ],
-            // selectedValue: '',
         }
     },
     methods: {
-    // ----- filtro per genere -----
-    // filterGenre(selectedValue) {
-    //   if (selectedValue === 'All') {
-    //     this.projects = this.project;
-    //   } else {
-    //     this.projects = this.project.filter((project) => {
-    //       return project.type.includes(selectedValue); 
-    //     });
-    //   }
-    // },
   }
 }
 </script>
