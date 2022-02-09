@@ -2,7 +2,7 @@
 <div class="header-Section"> 
     <div class="header-info d-flex justify-content-between">
             <div>
-                <i class="fa-solid fa-clock"></i>
+                <i class="fa-fas fa-clock"></i>
                 <span>Open Hours Mon - Sat - 0.00 - 18.00</span>
             </div>
             <div class="header-contact d-flex">
