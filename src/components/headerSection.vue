@@ -2,7 +2,7 @@
 <div class="header-Section"> 
     <div class="header-info d-flex justify-content-between">
             <div>
-                <i class="fa-fas fa-clock"></i>
+                <i class="fas-fa fa-clock"></i>
                 <span>Open Hours Mon - Sat - 0.00 - 18.00</span>
             </div>
             <div class="header-contact d-flex">
@@ -79,5 +79,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/style/general.scss"; //scss generale -- Bootsrap -- Fontawesome
 @import "@/style/header.scss";
 </style>
